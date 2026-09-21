@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/selectry/.github/security/policy
+    about: Read our policy and report security issues privately.
+  - name: Product and company enquiries
+    url: https://www.selectry.io
+    about: Visit the selectry website for current contact options.

@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible problem in this repository
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping us improve. Do not include secrets, personal data, customer data, candidate data, or security vulnerabilities.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence that demonstrates the problem.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: Version, tag, or commit SHA
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add non-sensitive logs, screenshots, or environment details if useful.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety checks
+      options:
+        - label: I removed secrets, personal data, customer data, and candidate data.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true

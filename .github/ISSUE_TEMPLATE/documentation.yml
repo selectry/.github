@@ -1,0 +1,20 @@
+name: Documentation improvement
+description: Suggest a correction or improvement to repository documentation
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Link the page or identify the file and section.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should change?
+      description: Explain what is unclear, missing, or incorrect and suggest improved wording when possible.
+    validations:
+      required: true
